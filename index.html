@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  #load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("css/load.gif") no-repeat center center rgb(0, 0, 0)
+  }
+</style>
+  <div id="load"></div>
+  <script>
+    document.onreadystatechange = function () {
+       var state = document.readyState
+       if (state == 'interactive') {
+           document.getElementById('contents').style.visibility="hidden";
+       } else if (state == 'complete') {
+           setTimeout(function(){
+             document.getElementById('interactive');
+             document.getElementById('load').style.visibility="hidden";
+             document.getElementById('contents').style.visibility="visible";
+           },1000);
+       }
+     }
+   </script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Affiliate Landing Page</title>
+   
+</head>
+<body>
+  
+    <div class="container">
+      
+        <div id="pages" class="pages">
+          <div class="page one">
+           
+            <div style="position: absolute; top: 0; left: 0;margin: 1vh;">
+            LOGO
+            </div>
+            <div style="position: absolute; top: 0; right: 0;margin-top: 1vh; z-index: 1;">
+              <a  onClick="slide('next')" >  <button >CONNECT</button> </a>
+              </div>
+            <div class="contentz">
+              <h1>LANDING PAGE</h1>
+              <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nobis earum quam? Iusto magni placeat earum quia eveniet voluptatem at minima aliquam, culpa distinctio sunt voluptate nemo optio voluptatum corporis nihil, reiciendis quas? Vel culpa eligendi nihil similique sapiente totam neque assumenda ut alias ipsam et impedit sequi, iure, omnis perspiciatis cumque incidunt sit accusamus voluptates vero eum temporibus. Odit ab officia, laboriosam eos id temporibus consectetur aut eius laborum nisi iste saepe nostrum blanditiis a. Ut unde libero distinctio voluptates inventore, laborum voluptatem neque suscipit est eius saepe vel nulla natus vero nostrum quis ullam eum rerum recusandae esse.</P>
+            </div>
+       
+          </div>
+           
+          <div id="" class="page two">
+            <form data-aos="fade-up" class="box" action="index.html" method="post">
+              <h1>Login</h1> 
+              <input type="text" name="" placeholder="E-Mail">
+              <input type="text" name="" placeholder="Name">
+              <a href="#" target="_blank" type="submit">Avatar</a>
+              <a  onClick="slide('next')" type="submit">Login</a>
+            </form>
+                     
+          
+          </div>
+          <div  id="three" class="page three">
+            <div class="daopage">
+              <div class="div1"> </div>
+              <div class="div2"> LOGO</div>
+              <div class="div3">GOV-WALLET</div>
+              <div class="div4">USER </div>
+              <div class="div5 centerz"> <h1>ALL VOTINGS</h1>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+              </div>
+              <div class="div6 centerz"> <h1>PROPOSALS </h1>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+              </div>
+              <div class="div7 centerz"><h1>NOMINEES</h1>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+                
+                <p>stuff 1</p> </div>
+              <div class="div8 centerz"><h1>DELEGATES</h1>
+                <p>stuff 1</p>
+                <p>stuff 1</p>
+             
+                <p>stuff 1</p>
+                <p>stuff 1</p></div>
+              </div>
+          </div>
+          <div class="page four">
+            <h1>PAGE 4</h1>
+            <div>
+              <button onClick="slide('prev')">Previous</button>
+              <button onClick="slide('next')">Next</button>
+            </div>
+          </div>
+          <div class="page five">
+            <h1>PAGE 5</h1>
+            <div>
+              <button onClick="slide('prev')">Previous</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/main.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    
+</body>
+
+</html>
